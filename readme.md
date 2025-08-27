@@ -26,13 +26,13 @@ Setup:
    git clone https://github.com/rfjimenez/DiscountServer.git
    cd DiscountServer
 
-2. Restore dependencies:
+3. Restore dependencies:
    dotnet restore
 
-3. Build the project:
+4. Build the project:
    dotnet build
 
-4. Run the server:
+5. Run the server:
    dotnet run --project DiscountServer
 
    The server will start and listen for WebSocket connections.
