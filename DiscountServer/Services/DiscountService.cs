@@ -138,6 +138,7 @@ namespace DiscountServer.Services
         {
             try
             {
+                EnsureStorageFolder(); // Ensure folder exists before saving
                 var json = JsonSerializer.Serialize(_codes);
                 File.WriteAllText(_storagePath, json);
             }
