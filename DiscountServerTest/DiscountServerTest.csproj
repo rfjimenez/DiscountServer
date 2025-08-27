@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DiscountCodeTask\DiscountServer.csproj" />
+    <ProjectReference Include="..\DiscountServer\DiscountServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

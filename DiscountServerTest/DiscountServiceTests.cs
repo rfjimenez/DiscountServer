@@ -1,8 +1,6 @@
 using DiscountServer.Models;
 using DiscountServer.Services;
-using Xunit;
 using Microsoft.Extensions.Configuration;
-using System.IO;
 
 public class DiscountServiceTests
 {
