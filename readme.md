@@ -81,8 +81,8 @@ How It Works
 ------------
 - Server listens for WebSocket connections.
 - Client sends requests in the format:
-    GENERATE|<count>|<length>
-    USE|<code>
+    GENERATE|count|length
+    USE|code
 - Server generates unique codes, saves them to disk (`Storage/discount_codes.json`), and marks codes as used.
 - If the `Storage` folder is missing, it is automatically created before saving codes.
 - Handles invalid or malformed requests gracefully.
