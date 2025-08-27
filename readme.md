@@ -24,6 +24,7 @@ Prerequisites:
 Setup:
 1. Clone the repository:
    git clone https://github.com/rfjimenez/DiscountServer.git
+   
    cd DiscountServer
 
 3. Restore dependencies:
@@ -36,7 +37,9 @@ Setup:
    dotnet run --project DiscountServer
 
    The server will start and listen for WebSocket connections.
+   
    Default WebSocket URL: ws://localhost:5253/ws or wss://localhost:7277/ws
+   
    (Check DiscountServer/Properties/launchSettings.json for the actual port and path.)
 
 Testing with a Simple WebSocket Client
@@ -44,15 +47,20 @@ Testing with a Simple WebSocket Client
 You can use websocat (https://github.com/vi/websocat), Postman, browser, or any WebSocket client.
 
 Example using websocat:
+
    websocat ws://localhost:5253/ws
 
 Generate codes request:
+
    Send text: GENERATE|5|8
+   
    - 5: Number of codes
    - 8: Code length
 
 Use code request:
+
    Send text: USE|ABC12345
+   
    - ABC12345: Discount code to use
 
 Responses
@@ -81,7 +89,9 @@ How It Works
 ------------
 - Server listens for WebSocket connections.
 - Client sends requests in the format:
+  
     GENERATE|count|length
+  
     USE|code
 - Server generates unique codes, saves them to disk (`Storage/discount_codes.json`), and marks codes as used.
 - If the `Storage` folder is missing, it is automatically created before saving codes.
