@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountServer", "DiscountCodeTask\DiscountServer.csproj", "{398255E3-6F5C-4422-B3B8-2D11F1A36207}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountServerTest", "DiscountServerTest\DiscountServerTest.csproj", "{2582EF18-143B-4AAE-9F64-79E1309DC375}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{398255E3-6F5C-4422-B3B8-2D11F1A36207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{398255E3-6F5C-4422-B3B8-2D11F1A36207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{398255E3-6F5C-4422-B3B8-2D11F1A36207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2582EF18-143B-4AAE-9F64-79E1309DC375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2582EF18-143B-4AAE-9F64-79E1309DC375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2582EF18-143B-4AAE-9F64-79E1309DC375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2582EF18-143B-4AAE-9F64-79E1309DC375}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
